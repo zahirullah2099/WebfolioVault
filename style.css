@@ -22,7 +22,8 @@
 
 body{
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: var(--text-color); 
+    scroll-behavior: smooth; 
 }
 /* header styling start */
 header{
@@ -98,8 +99,7 @@ span{
 /* hero section start */
 
 section{
-    /* 16% for left and right, and 110 and 90 for top and bottom */
-    padding: 110px 16% 90px; 
+     padding: 110px 16% 90px; 
 }
 .hero{
     width: 100vw;
@@ -181,7 +181,6 @@ section{
 .two{
     width: 400px;
     height: 400px; 
-    /* border: 1px solid var(--main-color); */
 }
 .two img{
     background-size: cover; 
@@ -266,8 +265,7 @@ section{
     .services-content{
         display: grid; 
         grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-        /* grid-template-columns:  (200px 200px 200px); */
-        align-items: center;
+         align-items: center;
         gap: 2.3rem;
         margin-top: 4.2rem;
     }
@@ -326,8 +324,7 @@ section{
     .box:hover{
         border: 1px solid var(--main-color);
         transform: translateY(-5px) scale(1.03);
-        /* box-shadow: 0 0 20px var(--main-color); */
-    }
+          }
 /* services end */
 
 /* protifolio start */
@@ -336,8 +333,7 @@ section{
 }
 .portfolio-content{
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(350px, auto));  */
-    grid-template-columns: 300px 300px 300px;
+     grid-template-columns: 300px 300px 300px;
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -348,7 +344,7 @@ section{
     border-radius: 28px;
     border: 1px solid transparent;
     box-shadow: 0 0 5px var(--main-color);
-    padding: 20px;
+    padding: 10px 10px;
     transition: all .50s ease;
 }
 .row img{
@@ -367,14 +363,15 @@ section{
 .row h5{
     font-size: 20px;
     font-weight: 600;
-    color: var(--other-color);
+    text-align: left; 
+    color: var(--main-color);
 }
 .row i{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     font-size: 25px;
     border-radius: 50%;
     color: var(--text-color);
@@ -386,12 +383,13 @@ section{
     backdrop-filter: brightness(50%);
     background: none;
 }
-.row h4{
-    font-size: 20px;
-    font-weight: 700;
+.row p{
+    font-size: 14px;
+    color: var(--other-color);
     margin-bottom: 10px;
     line-height: 1.4;
     text-align: left;
+    hyphens: auto;
 }
 .row img:hover{
     opacity: .3;
